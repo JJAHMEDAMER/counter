@@ -22,7 +22,9 @@
         let reset = document.getElementById('reset')
         let remove = document.getElementById('remove')
     
-
+        add.addEventListener('click', ()=>{count++; num.textContent = count})
+        remove.addEventListener('click', ()=>{count--; num.textContent = count})
+        reset.addEventListener('click', ()=>{count = 0; num.textContent = count})
     </script>
 </body>
 
